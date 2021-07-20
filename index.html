@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>WEB MARKET BOTSWANA</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mystyle.css" type="text/css">
+
+</head>
+<style>
+ body{
+     background:url("dinning.jpg");
+     background-size:cover;
+     background-repeat:no-repeat;
+     margin:0;
+	 }
+.transparent{
+background-color:transparent;
+margin-left:60%;
+width:20%;
+display:inline;
+}
+.home-side{
+display:inline;
+margin-top:10%;
+background-color:transparent;
+margin-left:10px;
+width:65%;
+}
+h1{
+font-size:18px;
+}
+
+</style>
+
+<body>
+
+
+
+<div class="navbar">
+  <a><img src="wmb%images/wmb logo.png" alt="Images/lagos.gif" height="70px" width="200px"></a>
+  <a href="#" class="active">HOME</a>
+  <a href=" shop.html">SHOP</a>
+  <a href=" aboutus.html">ABOUT US</a>
+  <a href=" connect.html">CONNECT</a>
+  <a href=" blog.html" class="right">BLOG</a>
+  
+  <div class="search-box">
+
+<input type="search-txt" name="" placeholder="search here">
+<a class="search-btn" href="#">
+<i class="fas fa-search"></i>
+</a>
+</div>
+</div>
+<div class="home-side">
+	 <img src="world.gif" height="300px" width="10%" >
+	 <p>Cick on get started to create a personal <br>account or register your Company with WORLD MARKET BOTSWANA</p>
+	<li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">login</button>
+</div>
+<div class='transparent'>
+ <div id="login-form" class="login-page">
+ <!--- form-box --->
+     <div class="form-box" >
+	     <div class="button-box">
+	     <div id="btn">  </div>
+		 <button type="button" onclick='login()' class='toggle-btn'>Log In </button>
+	     <button type="button" onclick='register()' class='toggle-btn'>Register</button>
+	    
+	 </div>
+<form id='login' class="input-group-login">
+	<h1>WEB MARKET BOTSWANA</h1>
+	     <input type='text' class='input-field' placeholder="Enter e-mail or username" required>
+     <input type='text' class='input-field' placeholder="Enter password" required>
+     <input type='checkbox' class='check-box'> <span>Remember Password</span> <button type="submit" class="submit-btn">login </button>
+
+</form>	
+
+<!---Registration form---> 
+
+
+                 <form id='register' class='input-group-register'>
+				 <h1>WEB MARKET BOTSWANA</h1>
+                     <input type='text' class='input-field' placeholder="Enter First Name" required>
+                     <input type='text' class='input-field' placeholder="Enter Last Name" required>
+                     <input type='text' class='input-field' placeholder="Enter your E-mail" required>
+                     <input type='password' class='input-field' placeholder="Enter new password" required>
+                     <input type='password' class='input-field' placeholder="Confirm password" required>
+                     <input type='checkbox' Class='check-box'><span>I agree to the terms and conditions.</span>
+                     <button type='submit' class='submit-btn'>Register</button>
+                 </form>
+				 
+
+             </div>
+         </div>
+	 </div>
+	 <!---login and registration script--->
+ <script>
+     var x=document.getElementById('login');
+	 var y=document.getElementById('register');
+	 var z=document.getElementById('btn');
+	 
+	 function register() {
+	     x.style.left='-400px';
+		 y.style.left='50px';
+		 z.style.left='110px';
+	 }
+	 function login() {
+	     x.style.left='50px';
+		 y.style.left='450px';
+		 z.style.left='0px';
+	 
+	 }
+ 
+ </script>
+ <!---login or registration click script--->
+ <script>
+     var modal = document.getElementById('login-form');
+     window.onclick=function(event){
+	 if (event.target == modal){
+	 modal.style.display="none";
+	 }
+	 
+	 }
+      	 
+ 
+ </script>
+</body>
+
+
+
+
+</html>
